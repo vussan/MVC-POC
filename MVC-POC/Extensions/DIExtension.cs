@@ -8,6 +8,7 @@ namespace MVC_POC.Extensions
         public static IServiceCollection AddDependency(this IServiceCollection services)
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ICPUnitOfWork, CPUnitOfWork>();
             return services;
         }
     }

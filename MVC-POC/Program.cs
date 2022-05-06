@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<AppDBContext>(x => x.UseSqlServer(Config.ConnectionString));
+builder.Services.AddDbContext<AffWeb_XYZContext>(x => x.UseSqlServer(Config.CPConnectionString));
 builder.Services.AddDependency();
 builder.Services.AddControllersWithViews();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();

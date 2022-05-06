@@ -17,6 +17,7 @@ namespace Utils
         }
 
         public static string ConnectionString { get { return _config.GetConnectionString("Default"); } }
+        public static string CPConnectionString { get { return _config.GetConnectionString("CP"); } }
         public static string TokenIssuer { get { return _config.GetSection("Token:Issuer").Value; } }
 
     }

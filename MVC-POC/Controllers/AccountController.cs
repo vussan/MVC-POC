@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using MVC_POC.ViewModels;
 using System.Security.Claims;
 
-namespace MVC_POC
+namespace MVC_POC.Controllers
 {
     public class AccountController : Controller
     {
